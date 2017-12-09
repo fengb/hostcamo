@@ -1,0 +1,30 @@
+#!/bin/bash
+
+target_ip=255.255.255.255
+
+hostfiles=(
+  https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+  https://mirror1.malwaredomains.com/files/justdomains
+  http://sysctl.org/cameleon/hosts
+  https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
+  https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
+  https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
+  https://hosts-file.net/ad_servers.txt
+)
+
+whitelist=(
+  localhost.localdomain
+  local
+  localhost
+  broadcasthost
+  0.0.0.0
+)
+
+regex_ip='[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
+regex_whitelist="^($(sed -e 's#\.#\\.#g' -e 's# #|#g' <<<"${whitelist[@]}"))$"
+
+curl "${hostfiles[@]}" | \
+  sed -E -e "s/^($regex_ip)?[[:space:]]+//g" -e 's/[[:space:]]*(#.*)?$//g' | \
+  grep -E -v -e "$regex_whitelist" -e "[ #]" -e "^$" | \
+  sort -u | \
+  sed -e "s/^/$target_ip /"
