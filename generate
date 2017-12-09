@@ -2,6 +2,16 @@
 
 target_ip=255.255.255.255
 
+whitelist=(
+  localhost.localdomain
+  local
+  localhost
+  broadcasthost
+  0.0.0.0
+)
+
+# Ripped this list from Pi-Hole:
+# https://raw.githubusercontent.com/pi-hole/pi-hole/master/adlists.default
 hostfiles=(
   https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
   https://mirror1.malwaredomains.com/files/justdomains
@@ -10,14 +20,6 @@ hostfiles=(
   https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
   https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
   https://hosts-file.net/ad_servers.txt
-)
-
-whitelist=(
-  localhost.localdomain
-  local
-  localhost
-  broadcasthost
-  0.0.0.0
 )
 
 regex_ip='[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
