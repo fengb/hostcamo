@@ -1,0 +1,10 @@
+language: generic
+
+script: ./generate >hosts.new
+
+deploy:
+  provider: script
+  script: bash .travis-push master
+  skip_cleanup: true
+  on:
+    branch: commander

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+branch="$1"
+
+git remote add secure "https://${GITHUB_TOKEN}@github.com/$TRAVIS_REPO_SLUG"
+git fetch secure "$branch"
+cp hosts.new hosts
+git commit . --author='Travis CI <noreply@travis-ci.org>' --message="Auto update from Travis #$TRAVIS_BUILD_NUMBER"
+git push secure "$branch"
