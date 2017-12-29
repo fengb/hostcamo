@@ -1,3 +1,5 @@
+image: yxdhde/alpine-curl-git
+
 stages:
   - build
   - deploy
