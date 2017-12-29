@@ -12,12 +12,6 @@ hosts.new:
 
 master-push:
   stage: deploy
+  script: ./.master-push.sh
   dependencies: [hosts.new]
   only: [commander]
-  script:
-    - git checkout master
-    - cp hosts.new hosts
-    - git config user.name "CI"
-    - git config user.email "ci@example.com"
-    - git commit . --message='Autocommit'
-    - git push "$(sed -e "s#//.*@#//oauth2:$ACCESS_TOKEN@#" <<<"$CI_REPOSITORY_URL")" master
