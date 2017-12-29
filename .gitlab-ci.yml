@@ -4,14 +4,14 @@ stages:
   - build
   - deploy
 
-hosts.new:
+hosts:
   stage: build
-  script: ./generate >hosts.new
+  script: ./generate >hosts
   artifacts:
     untracked: true
 
 master-push:
   stage: deploy
   script: ./.master-push.sh
-  dependencies: [hosts.new]
+  dependencies: [hosts]
   only: [commander]

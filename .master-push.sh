@@ -2,8 +2,9 @@
 
 set -euo pipefail
 
+mv hosts hosts.new
 git checkout -q master
-cp hosts.new hosts
+mv hosts.new hosts
 if git diff --exit-code; then
   exit
 fi
