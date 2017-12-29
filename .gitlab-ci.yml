@@ -6,7 +6,7 @@ stages:
 
 hosts:
   stage: build
-  script: ./generate >hosts
+  script: ./hostcamo >hosts
   artifacts:
     untracked: true
 
