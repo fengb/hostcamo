@@ -5,7 +5,7 @@ set -euo pipefail
 mv hosts hosts.new
 git checkout -q master
 mv hosts.new hosts
-if git diff --exit-code; then
+if git diff -q --exit-code; then
   exit
 fi
 
