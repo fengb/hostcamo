@@ -11,5 +11,5 @@ fi
 
 git config user.name "CI"
 git config user.email "ci@example.com"
-git commit hosts --quiet --message='Autocommit'
+git commit hosts --quiet --message="Autocommit from $CI_COMMIT_SHA"
 git push --quiet "$(sed -e "s#//.*@#//oauth2:$ACCESS_TOKEN@#" <<<"$CI_REPOSITORY_URL")" master
