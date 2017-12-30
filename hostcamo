@@ -27,6 +27,6 @@ regex_whitelist="^($(sed -e 's#\.#\\.#g' -e 's# #|#g' <<<"${whitelist[@]}"))$"
 
 curl "${hostfiles[@]}" | \
   sed -E -e "s/^($regex_ip)?[[:space:]]+//g" -e 's/[[:space:]]*(#.*)?$//g' | \
-  grep -E -v -e "$regex_whitelist" -e "[ #]" -e "^$" | \
+  grep -E -v -e "$regex_whitelist" -e "[^-._[:alnum:]]" -e "^$" | \
   sort -u | \
   sed -e "s/^/$target_ip /"
