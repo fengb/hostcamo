@@ -22,11 +22,20 @@ hostfiles=(
   https://hosts-file.net/ad_servers.txt
 )
 
-regex_ip='[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
-regex_whitelist="($(sed -e 's#\.#\\.#g' -e 's# #|#g' <<<"${whitelist[@]}"))"
+function download {
+  curl "${hostfiles[@]}"
+}
 
-curl "${hostfiles[@]}" |
-  sed -E -e "s/^($regex_ip)?[[:space:]]+//g" -e 's/[[:space:]]*(#.*)?$//g' |
-  sed -E -e "/^$regex_whitelist$/d" -e "/^[-._a-zA-Z0-9]+$/!d" |
-  sort -u |
-  sed -e "s/^/$target_ip /"
+function strip {
+  regex_ip='[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
+  sed -E -e "s/^($regex_ip)?[[:space:]]+//g" -e 's/[[:space:]]*(#.*)?$//g'
+}
+
+function filter {
+  regex_whitelist="($(sed -e 's#\.#\\.#g' -e 's# #|#g' <<<"${whitelist[@]}"))"
+  sed -E -e "/^$regex_whitelist$/d" -e "/^[-._a-zA-Z0-9]+$/!d"
+}
+
+if [ "${BASH_SOURCE[0]}" = "$0" ]; then
+  download | strip | filter | sort -u | sed -e "s/^/$target_ip /"
+fi
