@@ -4,6 +4,10 @@ stages:
   - build
   - deploy
 
+test:
+  stage: build
+  script: tests/bash_unit tests/*.bash
+
 hosts:
   stage: build
   script: ./hostcamo >hosts
