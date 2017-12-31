@@ -23,10 +23,10 @@ hostfiles=(
 )
 
 regex_ip='[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
-regex_whitelist="^($(sed -e 's#\.#\\.#g' -e 's# #|#g' <<<"${whitelist[@]}"))$"
+regex_whitelist="($(sed -e 's#\.#\\.#g' -e 's# #|#g' <<<"${whitelist[@]}"))"
 
-curl "${hostfiles[@]}" | \
-  sed -E -e "s/^($regex_ip)?[[:space:]]+//g" -e 's/[[:space:]]*(#.*)?$//g' | \
-  grep -E -v -e "$regex_whitelist" -e "[^-._[:alnum:]]" -e "^$" | \
-  sort -u | \
+curl "${hostfiles[@]}" |
+  sed -E -e "s/^($regex_ip)?[[:space:]]+//g" -e 's/[[:space:]]*(#.*)?$//g' |
+  sed -E -e "/^$regex_whitelist$/d" -e "/^[-._a-zA-Z0-9]+$/!d" |
+  sort -u |
   sed -e "s/^/$target_ip /"
