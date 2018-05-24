@@ -41,7 +41,7 @@ if [ "${BASH_SOURCE[0]}" = "$0" ]; then
   mkdir -p "$build_dir"
   for url in "${hostfiles[@]}"; do
     filename="$build_dir/__$(as_filename "$url")"
-    { curl -s "$url" | strip | filter > "$filename"; } &
+    { curl -s "$url" | strip | filter | sort -u > "$filename"; } &
   done
   wait
 
