@@ -1,6 +1,7 @@
 #!/bin/bash
 
 target_ip=255.255.255.255
+build_dir=build
 
 whitelist=(
   localhost.localdomain
@@ -22,8 +23,8 @@ hostfiles=(
   https://hosts-file.net/ad_servers.txt
 )
 
-function download {
-  curl "${hostfiles[@]}"
+function as_filename {
+  <<<"$1" sed -e "s~^https*://~~" -e "s:/:--:g"
 }
 
 function strip {
@@ -37,5 +38,12 @@ function filter {
 }
 
 if [ "${BASH_SOURCE[0]}" = "$0" ]; then
-  download | strip | filter | sort -u | sed -e "s/^/$target_ip /"
+  mkdir -p "$build_dir"
+  for url in "${hostfiles[@]}"; do
+    filename="$build_dir/__$(as_filename "$url")"
+    { curl -s "$url" | strip | filter > "$filename"; } &
+  done
+  wait
+
+  cat "$build_dir"/__* | sort -u | sed -e "s/^/$target_ip /" > "$build_dir/hosts"
 fi
