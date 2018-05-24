@@ -6,7 +6,7 @@ stages:
 
 test:
   stage: build
-  script: tests/bash_unit tests/*.bash
+  script: make
 
 hosts:
   stage: build
