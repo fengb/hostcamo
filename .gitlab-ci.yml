@@ -1,4 +1,4 @@
-image: yxdhde/alpine-curl-git
+image: vergissberlin/alpine-development
 
 stages:
   - build
