@@ -8,17 +8,25 @@ test:
   stage: build
   script: make
 
-hosts:
+download:
   stage: build
   script:
-    - mkdir -p dist
-    - ./hostcamo > dist/hosts
+    - ./hostcamo download
   artifacts:
     untracked: true
 
+hosts:
+  stage: deploy
+  dependencies: [download]
+  script:
+    - mkdir -p dist
+    - ./hostcamo recombinate > dist/hosts
+  artifacts:
+    paths: [dist/]
+
 history-push:
   stage: deploy
-  dependencies: [hosts]
+  dependencies: [download]
   only: [master]
   script:
     - git config user.name "CI"
