@@ -57,6 +57,6 @@ function command_recombinate {
 case "${1-}" in
   download)     command_download;;
   recombinate)  command_recombinate;;
-  "")           command_download && command_recombinate;;
-  *)            echo "Usage: $0" && exit 1;;
+  ""|all)       command_download && command_recombinate;;
+  *)            echo "Usage: $0 {all|download|recombinate}" && exit 1;;
 esac
