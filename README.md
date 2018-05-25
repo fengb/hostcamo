@@ -4,7 +4,11 @@ This is my hostfile. There are many like it, but this one is mine.
 
 ## How to use
 
-Coming soon
+```shell
+$ curl -L https://gitlab.com/fengb/hostcamo/-/jobs/artifacts/master/raw/dist/hosts?job=hosts > hosts
+```
+
+More details coming soon™
 
 ## Major features
 

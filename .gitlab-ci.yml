@@ -19,7 +19,7 @@ hosts:
 history-push:
   stage: deploy
   dependencies: [hosts]
-  only: [commander]
+  only: [master]
   script:
     - git config user.name "CI"
     - git config user.email "ci@example.com"
