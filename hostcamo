@@ -40,10 +40,10 @@ function filter {
 if [ "${BASH_SOURCE[0]}" = "$0" ]; then
   mkdir -p "$build_dir"
   for url in "${hostfiles[@]}"; do
-    filename="$build_dir/__$(as_filename "$url")"
+    filename="$build_dir/$(as_filename "$url")"
     { curl -s "$url" | strip | filter | sort -u > "$filename"; } &
   done
   wait
 
-  cat "$build_dir"/__* | sort -u | sed -e "s/^/$target_ip /" > "$build_dir/hosts"
+  cat "$build_dir"/* | sort -u | sed -e "s/^/$target_ip /"
 fi

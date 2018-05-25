@@ -10,16 +10,18 @@ test:
 
 hosts:
   stage: build
-  script: ./hostcamo
+  script:
+    - mkdir -p dist
+    - ./hostcamo > dist/hosts
   artifacts:
     untracked: true
 
-master-push:
+history-push:
   stage: deploy
   dependencies: [hosts]
   only: [commander]
   script:
     - git config user.name "CI"
     - git config user.email "ci@example.com"
-    - make ci-master
+    - make ci-history
     - git push --quiet "${CI_REPOSITORY_URL/\/\/*@///oauth:$ACCESS_TOKEN@}"
