@@ -1,7 +1,7 @@
 .PHONY: tests history
 
 tests:
-	tests/bash_unit tests/*.bash
+	tests/.bash_unit tests/*
 
 history: MESSAGE ?= [dummy message]
 history:
