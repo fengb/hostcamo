@@ -6,7 +6,7 @@ tests:
 history: MESSAGE ?= [dummy message]
 history:
 	git checkout --quiet history
-	git ls-files -z | xargs -0 -I {} git rm --quiet "{}"
+	git rm -r --ignore-unmatch --quiet .
 	mv build/* .
 	git add --all
 	if ! git diff HEAD --quiet; then git commit --quiet --message="$(MESSAGE)"; fi
