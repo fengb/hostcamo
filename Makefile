@@ -1,7 +1,12 @@
-.PHONY: tests history
+.PHONY: all test history
 
-tests:
+all: lint test
+
+test:
 	tests/.bash_unit tests/*
+
+lint:
+	shellcheck hostcamo tests/*
 
 history: MESSAGE ?= [dummy message]
 history:

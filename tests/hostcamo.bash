@@ -1,4 +1,7 @@
-source "$(dirname "$BASH_SOURCE")/../hostcamo"
+#!/bin/bash
+
+# shellcheck source=/dev/null
+source "$(dirname "${BASH_SOURCE[0]}")/../hostcamo"
 
 function test_as_filename {
   assert_equals 'google.com' \

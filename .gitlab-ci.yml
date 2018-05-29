@@ -6,12 +6,16 @@ stages:
 
 test:
   stage: build
-  script: make
+  script: make test
+
+shellcheck:
+  stage: build
+  image: koalaman/shellcheck-alpine
+  script: shellcheck hostcamo tests/*
 
 download:
   stage: build
-  script:
-    - ./hostcamo download
+  script: ./hostcamo download
   artifacts:
     untracked: true
 
