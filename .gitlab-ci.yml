@@ -31,5 +31,5 @@ history-push:
   script:
     - git config user.name "CI"
     - git config user.email "ci@example.com"
-    - make ci-history
+    - make history MESSAGE="[CI:${CI_PIPELINE_SOURCE}] ${CI_COMMIT_SHA:0:8}"
     - git push --quiet "${CI_REPOSITORY_URL/\/\/*@///oauth:$ACCESS_TOKEN@}"

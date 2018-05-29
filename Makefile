@@ -1,11 +1,12 @@
-.PHONY: tests ci-history
+.PHONY: tests history
 
 tests:
 	tests/bash_unit tests/*.bash
 
-ci-history:
+history: MESSAGE ?= [dummy message]
+history:
 	git checkout --quiet history
 	git ls-files -z | xargs -0 -I {} git rm --quiet "{}"
 	mv build/* .
 	git add --all
-	if ! git diff HEAD --quiet; then git commit --quiet --message="[CI:${CI_PIPELINE_SOURCE}] ${CI_COMMIT_SHA}"; fi
+	if ! git diff HEAD --quiet; then git commit --quiet --message="$(MESSAGE)"; fi
