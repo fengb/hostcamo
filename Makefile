@@ -8,8 +8,8 @@ test:
 lint:
 	shellcheck hostcamo tests/*
 
-history: MESSAGE ?= [dummy message]
 history:
+	@: $${MESSAGE?}
 	git checkout --quiet history
 	git rm -r --ignore-unmatch --quiet .
 	mv build/* .
