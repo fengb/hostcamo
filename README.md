@@ -8,7 +8,7 @@ Coming soon™
 
 ## Major features
 
-* Uses `255.255.255.255` — guaranteed invalid, unlike commonly used IPs (`0.0.0.0` and `127.0.0.1`)
+* `0.1.2.3` — guaranteed invalid, unlike commonly used IPs (`0.0.0.0` / `127.0.0.1` / `255.255.255.255`)
 * Tiny script — less code is easier to audit
 * Leverages git history — easier to track changes
-* Uses the [Pi-Hole adlist](https://raw.githubusercontent.com/pi-hole/pi-hole/master/adlists.default) — good enough for me
+* [Pi-Hole adlist](https://raw.githubusercontent.com/pi-hole/pi-hole/master/adlists.default) — good enough for me
