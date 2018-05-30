@@ -30,6 +30,19 @@ hosts:
   artifacts:
     untracked: true
 
+docker-push:
+  stage: deploy
+  image: "docker:latest"
+  services: ["docker:dind"]
+  variables:
+    DOCKER_DRIVER: overlay2
+  dependencies: [hosts]
+  script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
+    - DOCKER_IMAGE="${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_SLUG/master/latest}"
+    - docker build . -t "$DOCKER_IMAGE"
+    - docker push "$DOCKER_IMAGE"
+
 history-push:
   stage: deploy
   dependencies: [hosts]
