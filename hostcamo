@@ -1,7 +1,7 @@
 #!/bin/bash
 
 target_ip=0.1.2.3
-build_dir=build
+cache_dir=
 
 whitelist=(
   localhost.localdomain
@@ -23,6 +23,20 @@ hostfiles=(
   'https://hosts-file.net/ad_servers.txt'
 )
 
+function panic {
+  echo "$@" >&2
+  exit 1
+}
+
+function init_opts {
+  while getopts ":c:" opt "$@"; do
+    case "$opt" in
+      c) cache_dir="${OPTARG}";;
+      *) panic "Err: $opt";;
+    esac
+  done
+}
+
 function as_filename {
   <<<"$1" sed -e "s~^https*://~~" -e "s:/:--:g"
 }
@@ -37,15 +51,24 @@ function filter {
   sed -E -e "/^$regex_whitelist$/d" -e "/^[-._a-zA-Z0-9]+$/!d"
 }
 
+function maybe_cache {
+  url="$1"
+  if [ -z "$cache_dir" ]; then
+    cat
+  else
+    mkdir -p "$cache_dir"
+    tee "$cache_dir/$(as_filename "$url")"
+  fi
+}
+
 function process_all {
-  mkdir -p "$build_dir"
   for url in "${hostfiles[@]}"; do
-    filename="$build_dir/$(as_filename "$url")"
-    curl -s "$url" | strip | filter | sort -u | tee "$filename" &
+    curl -s "$url" | strip | filter | sort -u | maybe_cache "$url" &
   done
   wait
 }
 
 if [ "${BASH_SOURCE[0]}" = "$0" ]; then
+  init_opts "$@"
   process_all | sort -u | sed -e "s/^/$target_ip /"
 fi

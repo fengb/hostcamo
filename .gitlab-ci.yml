@@ -17,7 +17,7 @@ hosts:
   stage: build
   script:
     - mkdir -p dist
-    - ./hostcamo >dist/hosts
+    - ./hostcamo -c build >dist/hosts
   artifacts:
     untracked: true
 
