@@ -1,14 +1,17 @@
-#!/bin/sh
+#!/bin/bash
 
+generate_conf() {
+  echo no-hosts
+  echo addn-hosts=/etc/dnsmasq.d/hostcamo.hosts
 
-cat >/etc/dnsmasq.d/hostcamo.conf <<EOM
-no-hosts
-addn-hosts=/etc/dnsmasq.d/hostcamo.hosts
+  if [ -n "$NAMESERVER" ]; then
+    echo
+    echo "no-resolv"
+    <<<"$NAMESERVER" tr -s ":, " '\n' | sed "s/^/server=/g"
+  fi
+}
 
-$(if [ -n "$NAMESERVER" ]; then
-  echo "no-resolv"
-  echo $NAMESERVER | tr ":, " '\n' | sed "s/^/server=/g"
-fi)
-EOM
-
-"$@"
+if [ "${BASH_SOURCE[0]}" = "$0" ]; then
+  generate_conf >/etc/dnsmasq.d/hostcamo.conf
+  exec "$@"
+fi
