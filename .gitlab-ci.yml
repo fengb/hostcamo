@@ -13,24 +13,17 @@ shellcheck:
   image: koalaman/shellcheck-alpine
   script: shellcheck hostcamo tests/*
 
-download:
+hosts:
   stage: build
-  script: ./hostcamo download
+  script:
+    - mkdir -p dist
+    - ./hostcamo >dist/hosts
   artifacts:
     untracked: true
 
-hosts:
-  stage: deploy
-  dependencies: [download]
-  script:
-    - mkdir -p dist
-    - ./hostcamo recombinate > dist/hosts
-  artifacts:
-    paths: [dist/]
-
 history-push:
   stage: deploy
-  dependencies: [download]
+  dependencies: [hosts]
   only: [master]
   script:
     - git config user.name "CI"

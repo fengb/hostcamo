@@ -37,24 +37,15 @@ function filter {
   sed -E -e "/^$regex_whitelist$/d" -e "/^[-._a-zA-Z0-9]+$/!d"
 }
 
-function command_download {
+function process_all {
   mkdir -p "$build_dir"
   for url in "${hostfiles[@]}"; do
     filename="$build_dir/$(as_filename "$url")"
-    { curl -s "$url" | strip | filter | sort -u > "$filename"; } &
+    curl -s "$url" | strip | filter | sort -u | tee "$filename" &
   done
   wait
 }
 
-function command_recombinate {
-  cat "$build_dir"/* | sort -u | sed -e "s/^/$target_ip /"
-}
-
 if [ "${BASH_SOURCE[0]}" = "$0" ]; then
-  case "${1-}" in
-    download)     command_download;;
-    recombinate)  command_recombinate;;
-    ""|all)       command_download && command_recombinate;;
-    *)            echo "Usage: $0 {all|download|recombinate}" && exit 1;;
-  esac
+  process_all | sort -u | sed -e "s/^/$target_ip /"
 fi
