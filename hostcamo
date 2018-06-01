@@ -54,7 +54,7 @@ function join_by {
 }
 
 function filter {
-  merged="($(join_by '|' "${whitelist[@]}"))"
+  merged="($(join_by '|' "$@"))"
   grep -E -v -e "^${merged//./\\.}\$" -e "[^-._a-zA-Z0-9]" -e "^$"
 }
 
@@ -69,7 +69,7 @@ function maybe_cache {
 
 function process_all {
   for url in "${hostfiles[@]}"; do
-    curl -s "$url" | strip | filter | sort -u | maybe_cache "$url" &
+    curl -s "$url" | strip | filter "${whitelist[@]}" | sort -u | maybe_cache "$url" &
   done
   wait
 }

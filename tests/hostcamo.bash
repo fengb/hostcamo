@@ -32,11 +32,13 @@ function test_filter_valid_domains {
 
 function test_filter_whitelist {
   assert_equals '' \
-    "$(filter <<<'localhost')"
+    "$(filter 'localhost' <<<'localhost')"
+  assert_equals 'localhost.localdomain' \
+    "$(filter 'localhost' <<<'localhost.localdomain')"
   assert_equals '' \
-    "$(filter <<<'localhost.localdomain')"
+    "$(filter 'localhost.localdomain' <<<'localhost.localdomain')"
   assert_equals '' \
-    "$(filter <<<'0.0.0.0')"
+    "$(filter '0.0.0.0' <<<'0.0.0.0')"
   assert_equals '0-0-0-0' \
-    "$(filter <<<'0-0-0-0')"
+    "$(filter '0.0.0.0' <<<'0-0-0-0')"
 }
