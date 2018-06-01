@@ -38,7 +38,8 @@ function init_opts {
 }
 
 function as_filename {
-  <<<"$1" sed -e "s~^https*://~~" -e "s:/:--:g"
+  no_prefix="${1#http*://}"
+  echo "${no_prefix//\//--}"
 }
 
 function strip {
@@ -46,18 +47,23 @@ function strip {
   sed -E -e "s/^($regex_ip)?[[:space:]]+//g" -e 's/[[:space:]]*(#.*)?$//g'
 }
 
+function join_by {
+  local IFS="$1"
+  shift
+  echo "$*"
+}
+
 function filter {
-  regex_whitelist="($(sed -e 's#\.#\\.#g' -e 's# #|#g' <<<"${whitelist[@]}"))"
-  sed -E -e "/^$regex_whitelist$/d" -e "/^[-._a-zA-Z0-9]+$/!d"
+  merged="($(join_by '|' "${whitelist[@]}"))"
+  grep -E -v -e "^${merged//./\\.}\$" -e "[^-._a-zA-Z0-9]" -e "^$"
 }
 
 function maybe_cache {
-  url="$1"
   if [ -z "$cache_dir" ]; then
     cat
   else
     mkdir -p "$cache_dir"
-    tee "$cache_dir/$(as_filename "$url")"
+    tee "$cache_dir/$(as_filename "$1")"
   fi
 }
 
