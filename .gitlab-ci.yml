@@ -6,7 +6,11 @@ stages:
 
 test:
   stage: build
-  script: make test
+  image: ruby:alpine
+  before_script:
+    - apk --no-cache add bash
+    - gem install bashcov
+  script: bashcov tests/.bash_unit tests/*
 
 shellcheck:
   stage: build

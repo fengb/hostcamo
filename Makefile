@@ -3,7 +3,7 @@
 all: lint test
 
 test:
-	tests/.bash_unit tests/*
+	bashcov tests/.bash_unit tests/*
 
 lint:
 	shellcheck hostcamo tests/*
