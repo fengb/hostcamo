@@ -6,11 +6,13 @@ stages:
 
 test:
   stage: build
-  image: ruby:alpine
+  image: ruby:slim
   before_script:
-    - apk --no-cache add bash
     - gem install bashcov
-  script: bashcov tests/.bash_unit tests/*
+  script:
+    # bashcov cannot run as root so here's a magic user
+    - useradd -s /bin/bash user
+    - su user -c "$(command -v bashcov) tests/.bash_unit tests/*"
 
 shellcheck:
   stage: build
