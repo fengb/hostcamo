@@ -1,6 +1,6 @@
 #!/bin/bash
 
-target_ip=0.1.2.3
+target_ip=255.255.255.255
 cache_dir=
 
 whitelist=(
