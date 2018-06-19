@@ -1,6 +1,6 @@
-FROM alpine:latest
+FROM kylemanna/openvpn:latest
 
-RUN apk --no-cache add dnsmasq bash
+RUN apk --no-cache add dnsmasq
 
 COPY docker-entrypoint.sh /
 COPY dist/hosts /etc/dnsmasq.d/hostcamo.hosts
