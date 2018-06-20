@@ -4,7 +4,27 @@ This is [my hostfile](https://gitlab.com/fengb/hostcamo/-/jobs/artifacts/master/
 
 ## How to use
 
-Coming soon™
+#### Sample OpenVPN server — test only, insecure
+
+_Do not trust random VPN servers (including this one); they can easily MITM any network request you make._
+
+1. Download the [OpenVPN profile](https://gitlab.com/fengb/hostcamo/uploads/0c3d0ce1865282788fb0a30a96f9222f/hostcamo-example.ovpn) — SHA256 4748fc7513e5175b71f49f5bbbbe0292242da3e2ab59c5afa4c5f277593547df
+2. Connect using your favorite OpenVPN client — I use [Tunnelblick for macOS](https://tunnelblick.net/) and [OpenVPN Connect for iOS](https://itunes.apple.com/us/app/openvpn-connect/id590379981)
+3. Verify it's working: `nslookup doubleclick.net`
+4. Disconnect, because why are you connection to a random VPN?
+
+#### OpenVPN using Docker
+
+```bash
+# Use a volume to persist the VPN config
+$ docker volume create openvpn
+
+# Start the server -- first boot is slow because it generates an OpenVPN config
+$ docker run --volume openvpn:/etc/openvpn --env OVPN_SERVER_NAME=[your-hostname] --name registry.gitlab.com/fengb/hostcamo --detach --publish-all hostcamo
+
+# Get the client profile
+$ docker exec hostcamo ovpn_getclient hostcamo > hostcamo.ovpn
+```
 
 ## Major features
 
