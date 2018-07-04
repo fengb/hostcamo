@@ -14392,6 +14392,7 @@ ad.goo.ne.jp
 ad.gr.doubleclick.net
 ad.grafika.cz
 ad.gt.doubleclick.net
+ad.highsearch.co.kr
 ad.hk.doubleclick.net
 ad.hodomobile.com
 ad.hornymatches.com
@@ -14509,6 +14510,7 @@ ad.pickple.net
 ad.piximedia.com
 ad.pixnet.net
 ad.pl.doubleclick.net
+ad.planclick.co.kr
 ad.preferances.com
 ad.prismamediadigital.com
 ad.propellerads.com
@@ -15834,6 +15836,7 @@ adamoads.com
 adan1.xtendmedia.com
 adaos-ads.net
 adap.tv
+adapi.inlcorp.com
 adaroo.go2cloud.org
 adart.go2cloud.org
 adattract.go2cloud.org
@@ -29156,6 +29159,7 @@ hxmtq.voluumtrk.com
 hxnfk.voluumtrk.com
 hxpwl.voluumtrk.com
 hybl9bazbc35.pflexads.com
+hybridview.co.kr
 hybtq.voluumtrk.com
 hyield.jmp9.com
 hym.albinass.com
@@ -43674,6 +43678,7 @@ www.humourqyizg.download
 www.hurricanedigitalmedia.com
 www.hvaevqkprtumorous.review
 www.hyalinizeslskzyp.download
+www.hybridview.co.kr
 www.hyperbanner.net
 www.hyperlinksecure.com
 www.hyphenszypdywo.download
