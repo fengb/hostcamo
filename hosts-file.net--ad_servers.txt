@@ -34923,7 +34923,6 @@ secure.download-sponsor.de
 secure.eloqua.com
 secure.exoclick.com
 secure.flashtalking.com
-secure.footprint.net
 secure.fortuneaffiliates.com
 secure.gaug.es
 secure.ifbyphone.com
@@ -41753,7 +41752,6 @@ w.cm.ksmobile.com
 w.estat.com
 w.extreme-dm.com
 w.goprkcdn.com
-w.hypercomments.com
 w.mlv-cdn.com
 w.online-verlag-freiburg.de
 w.sharethis.com
