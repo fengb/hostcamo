@@ -7,7 +7,7 @@ This is [my hostfile](https://gitlab.com/fengb/hostcamo/-/jobs/artifacts/master/
 * Uses `255.255.255.255` instead of more error prone `127.0.0.1` or `0.0.0.0` — [more details](docs/ip-address.md)
 * Tiny script — less code is easier to audit
 * Leverages git history — easier to track changes
-* [Pi-Hole adlist](https://raw.githubusercontent.com/pi-hole/pi-hole/master/adlists.default) — good enough for me
+* [Pi-Hole adlist](https://raw.githubusercontent.com/pi-hole/pi-hole/557372b3122c6ba27c63e6908ea34f3a64829fb8/adlists.default) — good enough for me
 
 ## How to use
 

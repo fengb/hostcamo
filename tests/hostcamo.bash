@@ -12,33 +12,30 @@ function test_as_filename {
     "$(as_filename https://google.com/banana)"
 }
 
-function test_strip {
-  assert_equals 'localhost' \
-    "$(strip <<<'127.0.0.1 localhost')"
-  assert_equals 'broadcast' \
-    "$(strip <<<'255.255.255.255 broadcast')"
-}
-
-function test_filter_valid_domains {
-  assert_equals '' \
-    "$(filter <<<$'\n\n\n')"
-  assert_equals 'realdomain.com' \
-    "$(filter <<<'realdomain.com')"
+function test_extract_domains {
+  assert_equals 'google.com' \
+    "$(extract_domains <<<'127.0.0.1 google.com')"
   assert_equals 'xn--oogle-wmc.com' \
-    "$(filter <<<'xn--oogle-wmc.com')"
+    "$(extract_domains <<<'255.255.255.255         xn--oogle-wmc.com')"
+  assert_equals 'microsoft.com' \
+    "$(extract_domains <<<'   microsoft.com     ')"
+
   assert_equals '' \
-    "$(filter <<<'ɢoogle.com')"
+    "$(extract_domains <<<'127.0.0.1 localhost')"
+  assert_equals '' \
+    "$(extract_domains <<<'ɢoogle.com')"
 }
 
-function test_filter_whitelist {
+function test_reject {
   assert_equals '' \
-    "$(filter 'localhost' <<<'localhost')"
+    "$(reject 'localhost' <<<'localhost')"
   assert_equals 'localhost.localdomain' \
-    "$(filter 'localhost' <<<'localhost.localdomain')"
+    "$(reject 'localhost' <<<'localhost.localdomain')"
   assert_equals '' \
-    "$(filter 'localhost.localdomain' <<<'localhost.localdomain')"
+    "$(reject 'localhost.localdomain' <<<'localhost.localdomain')"
   assert_equals '' \
-    "$(filter '0.0.0.0' <<<'0.0.0.0')"
+    "$(reject '0.0.0.0' <<<'0.0.0.0')"
+
   assert_equals '0-0-0-0' \
-    "$(filter '0.0.0.0' <<<'0-0-0-0')"
+    "$(reject '0.0.0.0' <<<'0-0-0-0')"
 }

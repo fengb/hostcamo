@@ -3,7 +3,7 @@
 target_ip=255.255.255.255
 cache_dir=
 
-whitelist=(
+ignore_hosts=(
   localhost.localdomain
   local
   localhost
@@ -12,7 +12,7 @@ whitelist=(
 )
 
 # Ripped this list from Pi-Hole:
-# https://raw.githubusercontent.com/pi-hole/pi-hole/master/adlists.default
+# https://raw.githubusercontent.com/pi-hole/pi-hole/557372b3122c6ba27c63e6908ea34f3a64829fb8/adlists.default
 hostfiles=(
   'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts'
   'https://mirror1.malwaredomains.com/files/justdomains'
@@ -42,9 +42,10 @@ function as_filename {
   echo "${no_prefix//\//--}"
 }
 
-function strip {
-  regex_ip='[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
-  sed -E -e "s/^($regex_ip)?[[:space:]]+//g" -e 's/[[:space:]]*(#.*)?$//g'
+function extract_domains {
+  re_ip='[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
+  re_domain='[-.a-z]+\.[a-z]{2,}'
+  sed -E -n -e "s/^($re_ip)?([[:space:]]+)?($re_domain).*$/\3/p"
 }
 
 function join_by {
@@ -53,9 +54,8 @@ function join_by {
   echo "$*"
 }
 
-function filter {
-  merged="($(join_by '|' "$@"))"
-  grep -E -v -e "^${merged//./\\.}\$" -e "[^-._a-zA-Z0-9]" -e "^$"
+function reject {
+  grep -F -v -x -f <(join_by $'\n' "$@")
 }
 
 function maybe_cache {
@@ -68,13 +68,13 @@ function maybe_cache {
 }
 
 function process_all {
-  for url in "${hostfiles[@]}"; do
-    curl -s "$url" | strip | filter "${whitelist[@]}" | sort -u | maybe_cache "$url" &
+  for url in "$@"; do
+    curl --progress-bar -L "$url" | extract_domains | reject "${ignore_hosts[@]}" | maybe_cache "$url" &
   done
   wait
 }
 
 if [ "${BASH_SOURCE[0]}" = "$0" ]; then
   init_opts "$@"
-  process_all | sort -u | sed -e "s/^/$target_ip /"
+  process_all "${hostfiles[@]}" | sort -u | sed -e "s/^/$target_ip /"
 fi
