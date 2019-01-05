@@ -74,13 +74,11 @@ www.torrenty-org.pl
 urldelivery.com
 www.urldelivery.com
 files.ctnet
-cfvod.kaltura.com
 metrics.brightcove.com
 ping.chartbeat.net
 www.tvpassport.com
 www.googletagservices.com
 www.googletagmanager.com
-cdnapi.kaltura.com
 tvmds.tvpassport.com
 stats.wp.com
 aoredi.com
@@ -4344,6 +4342,7 @@ ad.adriver.ru
 ad.adserve.com
 ad.adserverplus.com
 ad.adsmart.net
+ad.adsrvr.org
 ad.adtegrity.net
 ad.adtoma.com
 ad.adverticum.net
@@ -6949,6 +6948,7 @@ d.adnetxchange.com
 d.adserve.com
 dads.new.digg.com
 d.ads.readwriteweb.com
+d.adup-tech.com
 d.adxcore.com
 d.agkn.com
 daily-saver.com
@@ -7691,6 +7691,7 @@ inklineglobal.com
 inl.adbureau.net
 inpagevideo.nl
 input.insights.gravity.com
+insight.adsrvr.org
 insightexpressai.com
 insightxe.pittsburghlive.com
 insightxe.vtsgonline.com
@@ -13812,7 +13813,6 @@ tracking.websitealive.com
 pixel.yabidos.com
 download.ytdownloader.com
 www.ytdownloader.com
-insight.adsrvr.org
 askads.ask.com
 socpixel.bidsystem.com
 static.brsrvr.com
@@ -14195,7 +14195,6 @@ tracker.freecharge.in
 neo.go.sonobi.com
 match.xg
 adplexmedia.adk
-ad.adsrvr.org
 ad.ad-stir.com
 ads.adthrive.com
 cdn.adtradr.com
@@ -19849,7 +19848,6 @@ ads.pushplay.com
 ads.quasaraffiliates.com
 ads.quoka.de
 ads.resoom.de
-ads.returnpath.net
 ads.saymedia.com
 ads.sift.co.uk
 ads.silverdisc.co.uk
@@ -20215,6 +20213,7 @@ cjlog.com
 claria.com
 class-act-clicks.com
 clearcomb.com
+click.absoluteagency.com
 click.fool.com
 clickability.com
 clickadz.com
@@ -20422,6 +20421,7 @@ eusta.de
 eventbeacon.ca
 everesttech.net
 evergage.com
+evyy.net
 ewebcounter.com
 exchange-it.com
 exchangead.com
@@ -20769,6 +20769,7 @@ messagenovice.com
 metaffiliation.com
 metanetwork.com
 methodcash.com
+metrics.consumerreports.org
 metrilo.com
 mfadsrvr.com
 microstatic.pl
@@ -21111,7 +21112,6 @@ roxr.net
 rtbpop.com
 rtbpopd.com
 rtmark.net
-ru-traffic.com
 rubiconproject.com
 rulerabbit.com
 runads.com
@@ -21514,7 +21514,6 @@ www-banner.chat.ru
 www-google-analytics.l.google.com
 www.dnps.com
 www.kaplanindex.com
-www.money
 www.photo-ads.co.uk
 wwwpromoter.com
 x-traceur.com
@@ -30945,6 +30944,7 @@ vdna.exelator.com
 www.exelator.com
 zabbix.exelator.com
 dctk.expedia.com
+collector.prod.expedia.com
 advertisers.exponential.com
 app.exponential.com
 aubrandsummit.exponential.com
@@ -37229,6 +37229,8 @@ www.tvpixel.com
 syndication.twitter.com
 cdn.syndication.twitter.com
 cdn-eb.syndication.twitter.com
+uciservice.com
+www.uciservice.com
 ugdturner.com
 dev.ugdturner.com
 prod.ugdturner.com
@@ -38754,6 +38756,8 @@ api.intercom.io
 api-iam.intercom.io
 api-ping.intercom.io
 app.intercom.io
+corporate.intercom.io
+internal.corporate.intercom.io
 demo.intercom.io
 demos.intercom.io
 engineering.intercom.io
@@ -39025,16 +39029,8 @@ server.pixel.marketing
 www.pixel.marketing
 awstrack.me
 r.eu
-pgqwxmgq.r.eu
 r.us
-bqxfpsxd.r.us
-hqpkwndm.r.us
-jqhgljty.r.us
-krhwhblq.r.us
-www.scysvr
 r.us
-gwglvsjp.r.us
-nyfjtsky.r.us
 sync-unosync-com.geodns.me
 pixel.shodan.me
 trace.pixel.shodan.me
@@ -39940,6 +39936,8 @@ verizon.demdex.net
 verizoncorp.demdex.net
 verizonenterprise.demdex.net
 verizontelematic.demdex.net
+verizonwireless.demdex.net
+fast.verizonwireless.demdex.net
 vfde.demdex.net
 vice.demdex.net
 vidalfrance.demdex.net
@@ -41390,6 +41388,7 @@ www.pscore-beta.pixel.printsites.net
 staging.pixel.printsites.net
 uat.pixel.printsites.net
 returnpath.net
+ads.returnpath.net
 app.returnpath.net
 eatpixel.app.returnpath.net
 eowebapi.app.returnpath.net
@@ -42342,6 +42341,7 @@ www.analytics.ispot.tv
 om.api.ispot.tv
 staging.om.api.ispot.tv
 www.staging.om.api.ispot.tv
+uat.api.ispot.tv
 assets.ispot.tv
 adam.assets.ispot.tv
 autodiscover.ispot.tv
@@ -42367,6 +42367,8 @@ iswww.ispot.tv
 mx.ispot.tv
 nat.ispot.tv
 pd.ispot.tv
+pi.ispot.tv
+pop.ispot.tv
 pt.ispot.tv
 www.pt.ispot.tv
 pte.ispot.tv
@@ -42453,12 +42455,6 @@ crta.dailymail.co.uk
 abscbn.grapeshot.co.uk
 ad-incisive.grapeshot.co.uk
 adform.grapeshot.co.uk
-admin.grapeshot.co.uk
-admin-appnexus.grapeshot.co.uk
-admin-gs-cats.grapeshot.co.uk
-admin-msix.grapeshot.co.uk
-admin-thetradedesk.grapeshot.co.uk
-admin-turn.grapeshot.co.uk
 tag-server.euwest-cluster.aws.grapeshot.co.uk
 tag-server-prod.euwest-cluster.aws.grapeshot.co.uk
 demo.grapeshot.co.uk
@@ -42506,7 +42502,6 @@ vice.grapeshot.co.uk
 virgin.grapeshot.co.uk
 vmp.grapeshot.co.uk
 wiley.grapeshot.co.uk
-www.grapeshot.co.uk
 xaxis.grapeshot.co.uk
 ssc.independent.co.uk
 nir.regmedia.co.uk
@@ -42749,6 +42744,7 @@ cda-filmy.com.pl
 cellfun.mobi
 centrumdxn.pl
 centrummarek.pl
+centrumnaukowe.eu
 centrumofert.com
 centrumplay.pl
 centrum-bezpiecznej-pozyczki.waw.pl
@@ -42818,6 +42814,9 @@ dlmyfile.com
 dnizbiotrue.pl
 dofinancovani-vyukajazyku.cz
 dofinansowania-jezykowe.pl
+dofinansowanie-malopolskie.pl
+dofinansowanie-mazowieckie.pl
+dofinansowanie-podkarpackie.pl
 doladowania-telefonu.pl
 doladujfona.net
 doladujfona.org
@@ -42866,6 +42865,7 @@ eeu.pl
 eforsa.pl
 egofiles.pw
 elite-crack.ml
+emilkrebs.com
 emobi-sys.com
 enbutique.com
 energetix.com.pl
@@ -42878,6 +42878,7 @@ eskk.pl
 estream.com.pl
 euco.pl
 euroagd.net
+euronicspl.net
 exeos.ws
 exitopolska.com
 extragenerators.xyz
@@ -42964,6 +42965,7 @@ firecash.org
 firecpa.com
 firegifts.pl
 firesub.pl
+fit-buzz.com
 flamefolder.com
 flirtarepertutti.com
 fmg.pl
@@ -43045,6 +43047,7 @@ hdmovies.pl
 hdseriale.pl
 healthy-news.biz
 health-line.me
+health-partner.net
 herbeauty.co
 heredatetime.com
 highlandder.com
@@ -43080,9 +43083,11 @@ instantdownloadsz.com
 instantgiftcodes.com
 instytutmed.pl
 instytut-pomocy.pl
+intconnectltd.com
 intelligenttechnologies.pl
 interbuty.pl
 internetowy-sklep.net
+inwestujwrozwoj.pl
 iotiot.cf
 ipzd.pl
 iqtestuj.glt.pl
@@ -43132,6 +43137,7 @@ konferencje.vantis.pl
 konkursy.de
 krdn.pl
 krebsmethod.com
+krebsmethod.it
 kryptochemik.pl
 ksiazka-telefoniczna-online.pl
 ktopodgladamnienafacebooku.wordpress.com
@@ -43193,6 +43199,7 @@ megacloudz.net
 megadown.net
 megadown.us
 megadownloader.co
+megalinguo.com
 mega-gry.com
 mememakers.mobi
 menshealthweb.co
@@ -43219,6 +43226,7 @@ modimoda.pl
 modnakolekcja.com
 mojadietanamase.pl
 mojekumpele.blogspot.com
+mojepc.net
 mojepvpweryfikacja.tk
 mojezakupy.net
 moje-iq.pl
@@ -43260,6 +43268,7 @@ namierz-telefon.pl
 napraw-laptopa.waw.pl
 napraw-swojego-laptopa.pl
 narzedzia-fb.blogspot.com
+nastim.pl
 naszasa.pl
 naszesprawdziany.pl
 naturabazar.pl
@@ -43308,6 +43317,7 @@ paifemouchoa.com
 pakiety-pokemon-go.blogspot.com
 pakiet-steam.pl
 pamietnikiwampirow.tv
+xn--pandorabiuteria-qkd.pl
 papla.pl
 patterntrader.biz
 paulinajanowicz.pl
@@ -43388,6 +43398,7 @@ pozyczki-prywatne.com.pl
 pracowniaciala.pl
 prawdziwyrozwoj.pl
 premiumlinkgenerator.online
+prime-management-ltd.com
 princessmask.pro
 private.atlanticgam.es
 prizefestival.mobi
@@ -43436,6 +43447,7 @@ rectangledownloads.com
 redirectzone.com
 redrct.online
 reducelant.com
+refundacjeregionalne.pl
 regme.pl
 reimageplus.com
 rekrutacja.zafriko.pl
@@ -43456,6 +43468,7 @@ rzeczyzadarmo.pl
 sales-express.eu
 searchrapid.pl
 sendspace.pw
+senoctis.pl
 seriale.org.pl
 serialefilmy.pl
 serwis.kb.help
@@ -43644,6 +43657,7 @@ wideo-pryszcz.blogspot.com
 widget-eforsa.pl
 wielkanagroda.com
 wielkaniespodzianka.pl
+wielkopolskie.refundacjeregionalne.pl
 wifiprotector.com
 wilkzwallstreet.blogspot.com
 wirtualna-polska.site
@@ -43651,6 +43665,7 @@ wirtuozseksu.pl
 wizjatv-kody.pl
 wniosek-online.co.pl
 wooptrk.com
+workwolf.pl
 worldinfoclub.com
 worldoftankscheats.com
 world-of-money.eu
@@ -43661,10 +43676,7 @@ www.amc.info
 www.amway.com
 www.amway.pl
 www.aquacell.pl
-www.arbonne.com
 www.avita.net.pl
-www.avon.com
-www.avon.pl
 www.awin.com
 www.betterware.pl
 www.casadasklep.pl
@@ -43857,6 +43869,7 @@ zmien-kolor.pl
 zmien-motyw.blogspot.com
 znajdz-numer.pl
 zobaczktopodgladaa.blogspot.com
+zoomica.pl
 zostan-zwyciezca.com
 zukiewicz.com
 zumodi.com
