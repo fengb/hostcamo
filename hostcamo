@@ -44,7 +44,7 @@ function as_filename {
 
 function extract_domains {
   re_ip='[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
-  re_domain='[-.a-z]+\.[a-z]{2,}'
+  re_domain='[-.a-z0-9]+\.[a-z]{2,}'
   sed -E -n -e "s/^($re_ip)?([[:space:]]+)?($re_domain).*$/\3/p"
 }
 
