@@ -76,5 +76,5 @@ function process_all {
 
 if [ "${BASH_SOURCE[0]}" = "$0" ]; then
   init_opts "$@"
-  process_all "${hostfiles[@]}" | sort -u | sed -e "s/^/$target_ip /"
+  process_all "${hostfiles[@]}" | sort -u | sed -e "/^$/d" -e "s/^/$target_ip /"
 fi
