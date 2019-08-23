@@ -592,6 +592,7 @@ fp-analytics.hotstar.com
 hb-analytics.hotstar.com
 in-viacom18.videoplaza.tv
 www.in-viacom18.videoplaza.tv
+market.moonicorn.network
 adn.insight.ucweb.com
 convhkmp.taboola.com
 www.convhkmp.taboola.com
@@ -2638,7 +2639,6 @@ ad.accesstrade.vn
 api.accesstrade.vn
 campaign.accesstrade.vn
 cdn.accesstrade.vn
-click.accesstrade.vn
 cv.accesstrade.vn
 dangky.accesstrade.vn
 docs.accesstrade.vn
@@ -2737,17 +2737,23 @@ t.gammaplatform.com
 tag.gammaplatform.com
 track.gammaplatform.com
 www.gammaplatform.com
-yomedia.vn
-static.yomedia.vn
-tracking.yomedia.vn
-mail.yomedia.vn
-ss.yomedia.vn
+ad-deliver.yomedia.vn
 analytics.yomedia.vn
 delivery.yomedia.vn
+demo.yomedia.vn
+dmp-log.yomedia.vn
+media.yomedia.vn
+media1.yomedia.vn
+ss.yomedia.vn
+sslstatic.yomedia.vn
+static.yomedia.vn
+tracking.yomedia.vn
+yomedia.vn
+demo.pinetech.vn
+file.pinetech.vn
+newsletter.pinetech.vn
 pinetech.vn
 www.pinetech.vn
-file.pinetech.vn
-demo.pinetech.vn
 business.cleverads.vn
 cleverads.vn
 crm.cleverads.vn
@@ -2760,12 +2766,34 @@ www.cleverads.vn
 youtube.cleverads.vn
 ambient-platform.com
 analytics.ambient-platform.com
+campaigns.ambient-platform.com
+cdn-media.ambient-platform.com
+cdn-media.m.ambient-platform.com
+cdn-media-m.ambient-platform.com
+cli.ambient-platform.com
+cli.m.ambient-platform.com
+conv.ambient-platform.com
+delivery.ambient-platform.com
+delivery.m.ambient-platform.com
+delivery-m.ambient-platform.com
+imp.ambient-platform.com
+imp.m.ambient-platform.com
+local-media.ambient-platform.com
+local-media.m.ambient-platform.com
+member.ambient-platform.com
 metrics.ambient-platform.com
-klick.vn
+retg.ambient-platform.com
+static.ambient-platform.com
+www.ambient-platform.com
 adv.klick.vn
 demo.klick.vn
 euro.klick.vn
+klick.vn
+qc.klick.vn
+text1.klick.vn
+wakeup.klick.vn
 wakeup247.klick.vn
+www.klick.vn
 admin.cokhach.com
 c.cokhach.com
 cokhach.com
@@ -2937,6 +2965,43 @@ us-geo.cityads.com
 userdocs.cityads.com
 wp-cdn.cityads.com
 www.cityads.com
+ads.appota.com
+adsota.com
+agency.adsota.com
+app.adsota.com
+dashboard.adsota.com
+highlandscoffee.adsota.com
+static.adsota.com
+track.adsota.com
+www.adsota.com
+api.app.masoffer.net
+app.masoffer.net
+beta-go.masoffer.net
+beta.go.masoffer.net
+cdn.masoffer.net
+img.masoffer.net
+m.masoffer.net
+masoffer.net
+static.masoffer.net
+tr.masoffer.net
+www.masoffer.net
+api.autoads.asia
+autoads.asia
+cdn.autoads.asia
+fcd.autoads.asia
+file.autoads.asia
+indo.autoads.asia
+mantis.autoads.asia
+pixel.autoads.asia
+testcert.autoads.asia
+tracking.autoads.asia
+www.autoads.asia
+xacthuc.autoads.asia
+click.phanquang.vn
+mail.phanquang.vn
+phanquang.vn
+quangcao.phanquang.vn
+www.phanquang.vn
 123c.vn
 ad-hcm.24hstatic.com
 ad-hn.24hstatic.com
@@ -2970,12 +3035,9 @@ ailamtrieuphu.com
 alivar.com.vn
 alivar.vn
 amobi.vn
-api.app.masoffer.net
 apinas.nct.vn
-app.masoffer.net
 banner.5giay.vn
 clevernet.vn
-click.phanquang.vn
 click.uniad.vn
 click.xdeal.vn
 client.vads.net.vn
@@ -2984,28 +3046,25 @@ clix.vn
 cms.vinaads.vn
 delivery.senvangvn.com
 deltago.com
+dev.mobilead.vn
 fptad.com
-img.masoffer.net
 imgraovat.vnecdn.net
 lrc.nct.nixcdn.com
 m.clevernet.vn
-mail.phanquang.vn
+m.mobilead.vn
 mepuzz.com
 microad.vn
 mobilead.vn
 mobileads.dieuviet.com
 myad.vn
 ng-vn-notice.gameitop.com
-phanquang.vn
 phimmedia03.com
 polyad.galaxypub.vn
 qc.yan.vn
 quangcao.24h.com.vn
-quangcao.phanquang.vn
 quangcao.thanhnien.vn
 quangcao.tuoitre.vn
 serving-ad.tv24.vn
-static.masoffer.net
 static.mepuzz.com
 stc-nas.nixcdn.com
 trenddigital.vn
@@ -3023,7 +3082,6 @@ www.alivar.vn
 www.clevernet.vn
 www.mepuzz.com
 www.microad.vn
-www.phanquang.vn
 www.vietbuzzad.com
 www.vietdorje.com
 zone.uniad.vn
@@ -3033,8 +3091,11 @@ analytics.bkav.com
 analytics.easyvideo.vn
 analytics.explus.vn
 analytics.thethao247.org
+analytics.tiki.vn
 analytics.vnreview.vn
 collect.ovp.vn
+deqik.com
+elogs.vnexpress.net
 fbuser.ovp.vn
 hc.viam.com.vn
 hostmaster.trending.vn
@@ -3053,6 +3114,7 @@ log.vov.vn
 log4x.nixcdn.com
 logging.galaxypub.vn
 logging.phunuonline.com.vn
+logsbin.dantri.com.vn
 mail.viam.com.vn
 s.baomoi.xdn.vn
 s.kenh14.vn
@@ -3074,6 +3136,7 @@ tracker.tintucvietnam.vn
 tracking.appwifi.com
 tracking.vht.com.vn
 trackingapi.foody.vn
+trackity.tiki.vn
 trending.vn
 userstats.shopee.vn
 viam.com.vn
@@ -17604,7 +17667,6 @@ www.ad-net.co.uk
 adnext.fr
 srv.adngin.com
 ad.adnow.com
-acdn.adnxs.com
 speednetwork14.adk2.co
 cdn.oas-c17.adnxs.com
 tt11.adobe.com
@@ -21272,6 +21334,7 @@ qikdownloads.com
 ads.reembed.com
 a10.reflexcash.com
 ads.reflexcash.com
+www.retailproductzone.com
 retracker.com
 samvaulter.com
 www.searchapps.me
@@ -27922,7 +27985,6 @@ adserverplus.com
 adserverpub.com
 adservinginternational.com
 adside.com
-adsk2.co
 adskeeper.co.uk
 adsklick.de
 adsmarket.com
@@ -27976,7 +28038,6 @@ advertmarket.com
 advertmedia.de
 advertserve.com
 advertwizard.com
-advfromnwl.com
 advideo.uimserv.net
 advisormedia.cz
 advnt.com
@@ -27990,6 +28051,7 @@ adx.allstar.cz
 adx.atnext.com
 adxpansion.com
 adxvalue.com
+adyea.com
 adz2you.com
 adzbazar.com
 adzerk.s3.amazonaws.com
@@ -28262,7 +28324,6 @@ cjbmanagement.com
 cjlog.com
 claria.com
 clearcomb.com
-click.absoluteagency.com
 click.fool.com
 click2freemoney.com
 clickability.com
@@ -28628,6 +28689,7 @@ hits4me.com
 hittail.com
 hollandbusinessadvertising.nl
 hollowshake.com
+homepageking.de
 honeygoldfish.com
 hotjar.com
 hotkeys.com
@@ -29202,7 +29264,6 @@ record.affiliates.karjalakasino.com
 record.bonniergaming.com
 record.mrwin.com
 redirectvoluum.com
-reduxmedia.com
 referralware.com
 reflectivereward.com
 regnow.com
@@ -29815,7 +29876,6 @@ zy16eoat1w.com
 166f.com
 16aq.cn
 175storis.com
-178evakuator178.ru
 17990.vicp.net
 17chezhan.com
 17youzi.com
@@ -31167,13 +31227,11 @@ startuptuesday.com
 starvirgin.com
 stats.cliqz.com
 switch.pt
-wpisz-to.pl
 www.cliqz.com
 xtrafficplus.com
 ypcpw.com
 yplassembly.in
 ytf8i5ce.top
-ytmnd.com
 yuarra.pluto.ro
 yubikk.info
 yudexjr.com
@@ -34715,7 +34773,6 @@ zipzoomfly.122.2o7.net
 5k-player.com
 7tools.eu
 24hoursready.cf
-24-fakty.pl
 3000-od-reki.pl
 a1a.pl
 ablip.pl
@@ -34767,7 +34824,6 @@ antyspam.net
 anuluj-dlug.pl
 anuluj-mandat.pl
 anuluj-natreta.pl
-anwan.pl
 apartamentypoleska.pl
 appcaptcha.com
 appfox.org
@@ -34793,6 +34849,7 @@ awarialaptopa.pl
 awin.com
 az27.pl
 babyeishgames.com
+balsit.org
 bartekzukiewicz.pl
 bazartani.pl
 bazasprawdzianow.pl
@@ -34838,6 +34895,7 @@ bustcream-pro.com
 butyadidas.pl
 butyasicsgel.pl
 butypremium.pl
+buty-shoes4u.pl
 calivita.com
 casada.pl
 casadasklep.pl
@@ -34879,6 +34937,7 @@ concash.pl
 contentlocked.xyz
 contentlockingnetworks.com
 cool-technology.com
+corneliafunke.pl
 cpabuild.com
 cpbld.co
 cpbldi.com
@@ -34942,7 +35001,6 @@ earthpowerint.com
 easynet.pierre-lang.com
 ebeautyportal.com
 ebook4all.com.pl
-ebookipdf.pl
 ebuty.net.pl
 ecoflow.pl
 ecomotto.pl
@@ -34960,6 +35018,7 @@ emobi-sys.com
 emporium-group.pl
 enbutique.com
 energetix.com.pl
+entermedia.pl
 eonline.pl
 epliki24.pl
 epremki.eu
@@ -34970,7 +35029,6 @@ ermail.pl
 erunner.pl
 erunners.pl
 eskk.pl
-esmok.pl
 euco.pl
 euresco.pl
 euronicspl.net
@@ -34991,6 +35049,7 @@ e-udanezakupy.pl
 f4u.pl
 faberlic.com
 fabrykaagd.com.pl
+fabryka-mebli.com
 fargofinanse.pl
 fasterfiles.net
 feed.engage.im
@@ -35060,7 +35119,6 @@ genetrk.com
 geniustrainer.net
 gerotel.com
 getcouponsfast.com
-getdataback.pl
 getleads.pl
 getthesneakers.pl
 gift-cards.co.pl
@@ -35077,7 +35135,6 @@ gotowkanadowod.pl
 gotowkanadzis.pl
 gotowkatutaj.pl
 gotowka-doreki.eu
-go.co-aa831.stream
 graomilion.pl
 greenbarleyplus.pl
 green-kredyt.pl
@@ -35111,7 +35168,6 @@ homejailbreak.com
 homgar.pl
 hostedfiles.net
 hotokazje.com
-huit.re
 humanverify.net
 hunterstyle.pl
 hunterstyle24.com
@@ -35155,7 +35211,6 @@ kancelariaae.pl
 kancelariakufieta.pl
 kancelarialewickich.pl
 kartavisa.pl
-kelerisriders.pl
 kenseeart.pl
 kickz4u.pl
 kiddabadam.com
@@ -35197,7 +35252,6 @@ laolle.com
 las-rp.pl
 lauretta-larix.eu
 lavylites.com
-ldrcp.pl
 lead.network
 leadn.pl
 leadzu.com
@@ -35222,7 +35276,6 @@ lp-wip.pl
 lrworld.com
 lucyfeed.com
 lyoness.com
-maczyn.pl
 madagascaroasis.org
 maendo.tv
 magiskmanager.com
@@ -35250,7 +35303,6 @@ menshealthweb.co
 mentor-cosmetics.com
 mezczyzna-trendy.pl
 mieszkania-pokoje-wynajem.pl
-milletpolska.pl
 minirtvshop.pl
 mistrzmotywacji.pl
 mkaltenpflege24h.pl
@@ -35259,7 +35311,6 @@ mobiapp-games.com
 mobicpi.com
 mobila.pl
 mobilerewards.io
-mobile-app.pl
 mobiluj.sk
 mobverify.com
 modi4moda.com
@@ -35273,6 +35324,7 @@ mon.trackmysales.website
 moneywin24.com
 morceko.pl
 morele.info
+morena.in.net
 morinda.com
 motifiles.com
 moviestarplanetcheatstool.com
@@ -35294,6 +35346,7 @@ nametests.com
 namierzanie-telefonu.pl
 namierz-telefon.com.pl
 napraw-laptopa.waw.pl
+narelaks.pl
 nasdacoin.io
 nassy.pl
 naturabazar.pl
@@ -35337,6 +35390,7 @@ ogladamy24.pl
 okazyjnie.net
 olubin.pl
 olympus-markets.com
+omega-best.org
 onecoin.eu
 onelife.eu
 online.pro
@@ -35405,7 +35459,6 @@ pozyczka-minutowa.pl
 pozyczka-sms.pl
 pozyczka-tanio-szybko.pl
 pozyczkiprywatne.com
-pozyczki-inwestor.pl
 pozyczki-prywatne.com
 pozyczki-prywatne.com.pl
 xn--poyczaj-xwb.online.pl
@@ -35416,7 +35469,6 @@ prdplock.pl
 premium.ihuh.pl
 premiumlinkgenerator.online
 prevalue.pl
-prime-management-ltd.com
 princessmask.pro
 private.atlanticgam.es
 prizelava.com
@@ -35459,7 +35511,6 @@ ramissio.com
 raypath.eu
 raypath-international.com.pl
 rbxfree.com
-realgift.men
 real-app.date
 recommendedlab.com
 rectangledownloads.com
@@ -35477,6 +35528,7 @@ roboclean-poland.com
 rosalieeve.pl
 roulettenumber.com
 rowerowyrajd.pl
+rownet.pl
 rtvagdpro.net
 ruletkasystem.eu
 ruletka-systemy.com
@@ -35500,6 +35552,7 @@ serialefilmy.pl
 serwis.kb.help
 serwislaptopowwarszawa.com.pl
 serwis-laptopow24.pl
+shidokan-lodz.pl
 shiporama.com
 shoegallery.com.pl
 shoesvclub.com
@@ -35575,6 +35628,7 @@ telecop.in.net
 telemediaa.pl
 tembakan.pl
 tengofoxfiles.com
+terazdzielnice.pl
 terrex.pl
 testony.com
 thermomix.vorwerk.pl
@@ -35586,7 +35640,6 @@ tiande.wroclaw.pl
 tiandepolska.pl
 tiandewarszawa.pl
 tiens.pl
-tigipro.pl
 tilido.com
 tniemyceny.net
 tomaszrabinski.pl
@@ -35622,6 +35675,7 @@ urwijnagrody.pl
 usa.cc
 usunwirusa.pl
 vansallegro.pl
+vanssk8hi.pl
 vantis-holding.com
 vapormax.pl
 vascoart.pl
@@ -35637,7 +35691,6 @@ vfastdownload.com
 videodownloadconverter.com
 vidzsource.net
 vipcheats.us
-viphack.pro
 vipon.pl
 virtualsklep.com
 vision2020.pl
@@ -35713,7 +35766,6 @@ www.amway.pl
 www.androidgameshacks.com
 www.antontech.pl
 www.antyspam.net
-www.anwan.pl
 www.apartamentypoleska.pl
 www.appcaptcha.com
 www.appfox.org
@@ -35737,6 +35789,7 @@ www.awarialaptopa.pl
 www.awin.com
 www.az27.pl
 www.babyeishgames.com
+www.balsit.org
 www.bartekzukiewicz.pl
 www.bazartani.pl
 www.bazasprawdzianow.pl
@@ -35808,6 +35861,7 @@ www.colway.pl
 www.concash.pl
 www.contentlocked.xyz
 www.contentlockingnetworks.com
+www.corneliafunke.pl
 www.cpabuild.com
 www.cpbldi.com
 www.cpbld.co
@@ -35861,7 +35915,6 @@ www.dzisiejszefakty.xyz
 www.earthpowerint.com
 www.ebeautyportal.com
 www.ebook4all.com.pl
-www.ebookipdf.pl
 www.ebuty.net.pl
 www.ecoflow.pl
 www.ecomotto.pl
@@ -35875,6 +35928,7 @@ www.elektro24h.pl
 www.elepta.pl
 www.enbutique.com
 www.energetix.com.pl
+www.entermedia.pl
 www.eonline.pl
 www.epliki24.pl
 www.epremki.eu
@@ -35885,7 +35939,6 @@ www.ermail.pl
 www.erunners.pl
 www.erunner.pl
 www.eskk.pl
-www.esmok.pl
 www.euco.pl
 www.euresco.pl
 www.euronicspl.net
@@ -35958,7 +36011,6 @@ www.genetrk.com
 www.geniustrainer.net
 www.gerotel.com
 www.getcouponsfast.com
-www.getdataback.pl
 www.getleads.pl
 www.getthesneakers.pl
 www.gikon.pl
@@ -36001,7 +36053,6 @@ www.homejailbreak.com
 www.homgar.pl
 www.hostedfiles.net
 www.hotokazje.com
-www.huit.re
 www.humanverify.net
 www.hunterstyle24.com
 www.hunterstyle.pl
@@ -36039,7 +36090,6 @@ www.kancelariaae.pl
 www.kancelariakufieta.pl
 www.kancelarialewickich.pl
 www.kartavisa.pl
-www.kelerisriders.pl
 www.kenseeart.pl
 www.kickz4u.pl
 www.kiddabadam.com
@@ -36075,7 +36125,6 @@ www.kyani.com
 www.lampeberger.com.pl
 www.laolle.com
 www.lavylites.com
-www.ldrcp.pl
 www.leadn.pl
 www.leadzu.com
 www.lead.network
@@ -36098,7 +36147,6 @@ www.lovemyshoes.pl
 www.lrworld.com
 www.lucyfeed.com
 www.lyoness.com
-www.maczyn.pl
 www.madagascaroasis.org
 www.maendo.tv
 www.magiskmanager.com
@@ -36123,7 +36171,6 @@ www.megachiny.eu
 www.megadownloader.co
 www.megazakupy.net
 www.menshealthweb.co
-www.milletpolska.pl
 www.minirtvshop.pl
 www.mistrzmotywacji.pl
 www.mkaltenpflege24h.pl
@@ -36144,6 +36191,7 @@ www.moneywin24.com
 www.mon.trackmysales.website
 www.morceko.pl
 www.morele.info
+www.morena.in.net
 www.morinda.com
 www.motifiles.com
 www.moviestarplanetcheatstool.com
@@ -36162,6 +36210,7 @@ www.myworld.com
 www.najlepszedlaciebie.com
 www.nameguess.com
 www.nametests.com
+www.narelaks.pl
 www.nasdacoin.io
 www.nassy.pl
 www.naturabazar.pl
@@ -36293,7 +36342,6 @@ www.ralplauran.com
 www.ramissio.com
 www.raypath.eu
 www.rbxfree.com
-www.realgift.men
 www.recommendedlab.com
 www.rectangledownloads.com
 www.redirectzone.com
@@ -36309,6 +36357,7 @@ www.robloxhack.pl
 www.rosalieeve.pl
 www.roulettenumber.com
 www.rowerowyrajd.pl
+www.rownet.pl
 www.rtvagdpro.net
 www.ruletkasystem.eu
 www.runshoes.pl
@@ -36392,6 +36441,7 @@ www.telecop.in.net
 www.telemediaa.pl
 www.tembakan.pl
 www.tengofoxfiles.com
+www.terazdzielnice.pl
 www.terrex.pl
 www.testony.com
 www.thermomix.vorwerk.pl
@@ -36402,7 +36452,6 @@ www.tiande.pl
 www.tiande.ru
 www.tiande.wroclaw.pl
 www.tiens.pl
-www.tigipro.pl
 www.tilido.com
 www.tniemyceny.net
 www.tomaszrabinski.pl
@@ -36434,6 +36483,7 @@ www.urwijnagrody.pl
 www.usa.cc
 www.usunwirusa.pl
 www.vansallegro.pl
+www.vanssk8hi.pl
 www.vapormax.pl
 www.vascoart.pl
 www.vegascosmetics.de
@@ -36447,7 +36497,6 @@ www.vfastdownload.com
 www.videodownloadconverter.com
 www.vidzsource.net
 www.vipcheats.us
-www.viphack.pro
 www.vipon.pl
 www.virtualsklep.com
 www.vision2020.pl
@@ -36503,6 +36552,7 @@ www.zakupyagd.net
 www.zakupymax.net
 www.zalukajfilmy.pl
 www.zapraszamybowarto.pl
+www.zaprojektujiwybuduj.pl
 www.zarobek4u.com
 www.zarobicpieniadze.com
 www.zebrapozyczki.pl
@@ -36521,7 +36571,6 @@ www.5k-player.com
 www.7tools.eu
 www.20pascals.nl
 www.24hoursready.cf
-www.24-fakty.pl
 www.3000-od-reki.pl
 www.act-natural.pl
 www.act-natural-sklep.pl
@@ -36539,6 +36588,7 @@ www.be-wild.pl
 www.bit-coin-trader.com
 www.blog-in.biz
 www.bustcream-pro.com
+www.buty-shoes4u.pl
 www.cda-bez-limitu.pl
 www.cda-filmy.com.pl
 www.centrum-agd.net
@@ -36570,6 +36620,7 @@ www.e-dorecz.pl
 www.e-fohow.pl
 www.e-naturessunshine.com
 www.e-udanezakupy.pl
+www.fabryka-mebli.com
 www.fabryka-nagrod.com
 www.filmy-premium.pl
 www.fit-buzz.com
@@ -36585,7 +36636,6 @@ www.gano-excel.pl
 www.gazeta-pl.site
 www.gift-cards.co.pl
 www.gotowka-doreki.eu
-www.go.co-aa831.stream
 www.green-kredyt.pl
 www.healthy-news.biz
 www.health-line.me
@@ -36610,7 +36660,6 @@ www.mentor-cosmetics.com
 www.mezczyzna-trendy.pl
 www.mieszkania-pokoje-wynajem.pl
 www.mobiapp-games.com
-www.mobile-app.pl
 www.moviestarplanet-hack.org.pl
 www.moviestarplanet-haki-i-kody.crazylife.pl
 www.namierzanie-telefonu.pl
@@ -36619,6 +36668,7 @@ www.napraw-laptopa.waw.pl
 www.nowa.k-link-poland.pl
 www.obos-ankiety.pl
 www.olympus-markets.com
+www.omega-best.org
 www.online-ruletka.pl
 www.oplacalna-gotowka.pl
 www.oplaca-sie.pl
@@ -36636,12 +36686,10 @@ www.pol.boobs-xl.com
 www.pozyczka-minutowa.pl
 www.pozyczka-sms.pl
 www.pozyczka-tanio-szybko.pl
-www.pozyczki-inwestor.pl
 www.pozyczki-prywatne.com
 www.pozyczki-prywatne.com.pl
 www.xn--poyczaj-xwb.online.pl
 www.premium-offers.space
-www.prime-management-ltd.com
 www.punkt-pozyczka.pl
 www.quick-eye.pl
 www.raypath-international.com.pl
@@ -36651,6 +36699,7 @@ www.ruletka-systemy.com
 www.rzetelna-pozyczka.pl
 www.sales-express.eu
 www.serwis-laptopow24.pl
+www.shidokan-lodz.pl
 www.shop.dr-rath.com
 www.showup-tv.com.pl
 www.sklep-colway.com
@@ -36714,6 +36763,7 @@ zakupyagd.net
 zakupymax.net
 zalukajfilmy.pl
 zapraszamybowarto.pl
+zaprojektujiwybuduj.pl
 zarobek4u.com
 zarobicpieniadze.com
 zdaj-to.pl
@@ -37153,6 +37203,7 @@ apple.com-shield.live
 apple.com-speedup-macbook.live
 apple.com-speedup-macos.live
 apple.com-speed-macos.live
+apps.co.pl
 appsdorado.com
 aseanlegaltech.com
 astrocash.org
@@ -37296,6 +37347,8 @@ hostplik.pl
 hostujmy.pl
 hothub.pl
 hotnews24h.pl
+idealnafigura.com
+infonews24.com.pl
 inpost24.me
 insanepays.com
 instantdownloadsz.com
@@ -37343,6 +37396,7 @@ megadown.net
 megadown.us
 mega-gry.com
 megolbassia.com
+mergedocsnow.com
 mobgames.mobi
 mobileaps.co
 mobilejmp.com
@@ -37359,6 +37413,7 @@ myeforsa.pl
 nagroda-sms.pl
 najlepszewrozby.pl
 namierz-telefon.pl
+nataliaporwana.biz
 needforfile.net
 newsy-onet24.pl
 newszone.pro
@@ -37399,14 +37454,12 @@ playmobilecrm.com
 playmovie.pl
 playnowunlimited.biz
 playproz.com
-play-logic-games.com
 plengistat.info
 pliks.pl
 plikson.pl
 plikson24.pl
 po.fyybox.com
 pobieralnie-plikow.eu
-pobieram-plik.pl
 pobierane.pl
 pobierz24.pl
 pobierzgo.pl
@@ -37415,11 +37468,14 @@ pobierz-pliczek.eu
 pobiieerz-fotografiee.eu
 pod004.site
 pornmania.pl
+porwanonatalie.org.pl
 profitmaximum.pl
+propdfconverter.com
 przejdz.ml
 przepismix.pl
 przesyleczki.com
 psialapka.pl
+ptcspy.com
 ptgame.eu
 qubble.com
 quiz-fun.com.my
@@ -37430,6 +37486,7 @@ relayimmo.com
 restricted.pl
 rewardrey.com
 risingindianews.com
+rossmannbonyzakupowe.grvdc.eu
 rzeczyzadarmo.pl
 sarnisas.info
 searchrapid.pl
@@ -37487,6 +37544,7 @@ ulink.pl
 update-1.com
 update-flash.s0l8ybzj9u.top
 upshare.org
+uwagaporwanie.eu
 uzupelniajdane.ga
 uzupelniajdane.gq
 videorazr.com
@@ -37520,6 +37578,7 @@ www.androidsecurityplus.com
 www.appandroider.com
 www.appiq.mobi
 www.appsdorado.com
+www.apps.co.pl
 www.aseanlegaltech.com
 www.astrocash.org
 www.bazafilmowa.org
@@ -37622,6 +37681,8 @@ www.hostplik.pl
 www.hostujmy.pl
 www.hothub.pl
 www.hotnews24h.pl
+www.idealnafigura.com
+www.infonews24.com.pl
 www.inpost24.me
 www.insanepays.com
 www.instantdownloadsz.com
@@ -37660,6 +37721,7 @@ www.megacloudz.net
 www.megadown.net
 www.megadown.us
 www.megolbassia.com
+www.mergedocsnow.com
 www.mobgames.mobi
 www.mobileaps.co
 www.mobilejmp.com
@@ -37673,6 +37735,7 @@ www.msphack.com.pl
 www.myeforsa.pl
 www.m.smsquiz.pl
 www.najlepszewrozby.pl
+www.nataliaporwana.biz
 www.needforfile.net
 www.newszone.pro
 www.nonstopvideos.pl
@@ -37707,12 +37770,15 @@ www.pobierzgo.pl
 www.pobierzpliki.pl
 www.pod004.site
 www.pornmania.pl
+www.porwanonatalie.org.pl
 www.po.fyybox.com
 www.profitmaximum.pl
+www.propdfconverter.com
 www.przejdz.ml
 www.przepismix.pl
 www.przesyleczki.com
 www.psialapka.pl
+www.ptcspy.com
 www.ptgame.eu
 www.qubble.com
 www.randewoo.ir
@@ -37721,6 +37787,7 @@ www.relayimmo.com
 www.restricted.pl
 www.rewardrey.com
 www.risingindianews.com
+www.rossmannbonyzakupowe.grvdc.eu
 www.rzeczyzadarmo.pl
 www.sarnisas.info
 www.searchrapid.pl
@@ -37766,6 +37833,7 @@ www.twojeartykuly.com
 www.twojhoroskop.com
 www.ulink.pl
 www.upshare.org
+www.uwagaporwanie.eu
 www.uzupelniajdane.ga
 www.uzupelniajdane.gq
 www.videorazr.com
@@ -37787,7 +37855,6 @@ www.wygrajpsc.eu
 www.wygrania.com
 www.wygrywa.pl
 www.yotefiles.com
-www.yourfiles.pl
 www.yuppipuppy.com
 www.za10groszy.pl
 www.zarabativaisazartom.net
@@ -37796,7 +37863,6 @@ www.zgarnijplik.pl
 www.zgarnij.net
 www.zumodi.com
 www.zweryfiikujdane.tk
-www4.co-aa198.stream
 www-apple-com-virus-removal-systems.fixingit.solutions
 www.1freesoftwareonline.com
 www.4kplayer.pl
@@ -37884,9 +37950,7 @@ www.orange-kodzik.890m.com
 www.paczkomaty-pl.tk
 www.pakiet-steam.pl
 www.pko-bp.pl
-www.play-logic-games.com
 www.pobieralnie-plikow.eu
-www.pobieram-plik.pl
 www.pobierz-pliczek.eu
 www.pobiieerz-fotografiee.eu
 www.quiz-fun.com.my
@@ -37925,7 +37989,6 @@ wygrajpsc.eu
 wygrania.com
 wygrywa.pl
 yotefiles.com
-yourfiles.pl
 your-mac-security-analysis.net.guygr.upnpuqimdqnghau.icu
 your-movies.pl
 yuppipuppy.com
@@ -38068,6 +38131,8 @@ ce.wielkaniespodzianka.pl
 cs.shiporama.com
 cs.spotlessweb.com
 czas-na-fb.blogspot.com
+dev.apps.co.pl
+download.apps.co.pl
 dw.lp.eu.emobi-sys.com
 facebokznajomi.blogspot.com
 fbcolor.blogspot.com
@@ -38075,13 +38140,17 @@ fb-podglad.blogspot.com
 fcolors.blogspot.com
 fejsopodgladacz.blogspot.com
 fejs-colors.blogspot.com
+free.apps.co.pl
+free.propdfconverter.com
 freeiqtest.blogspot.com
+game.apps.co.pl
 gw.firesub.pl
 hp.myway.com
 hwww.zweryfiikujdane.tk
 kaufland.gift-cards.co.pl
 m.pl.failmobile.net
 mediamarkt.pl.dailyoffer.top
+netflix.apps.co.pl
 odzyskajsnapy.blogspot.com
 pakiety-lte-5gb.blogspot.com
 pakiety-pokemon-go.blogspot.com
@@ -38128,13 +38197,18 @@ www.ce.wielkanagroda.com
 www.ce.wielkaniespodzianka.pl
 www.cs.shiporama.com
 www.cs.spotlessweb.com
+www.dev.apps.co.pl
 www.dotabet100.com
+www.download.apps.co.pl
 www.download.w65.pl
 www.facebokznajomi.blogspot.com
 www.fbcolor.blogspot.com
 www.fcolors.blogspot.com
 www.fejsopodgladacz.blogspot.com
 www.freeiqtest.blogspot.com
+www.free.apps.co.pl
+www.free.propdfconverter.com
+www.game.apps.co.pl
 www.go.bestmobiworld.com
 www.gw.firesub.pl
 www.hp.myway.com
@@ -38142,6 +38216,7 @@ www.hwww.zweryfiikujdane.tk
 www.klikijuz.com
 www.mediamarkt.pl.dailyoffer.top
 www.m.pl.failmobile.net
+www.netflix.apps.co.pl
 www.odzyskajsnapy.blogspot.com
 www.ping.ublock.org
 www.play.appiq.mobi
@@ -40517,6 +40592,7 @@ adserver.cxad.cxense.com
 adserver.yahoo.co.jp
 adservice.google.co.jp
 adserving.jp
+adsk2.co
 adsp.i2idata.com
 adsp1.i2i.jp
 adstatic.ameba.jp
@@ -41479,7 +41555,6 @@ nc-log.excite.co.jp
 netasaka.vis1.shinobi.jp
 netdreamersad.durasite.net
 netwayz.com.sg
-newrelic.com
 newyorksportsworld.com
 newzia.jp
 nex8.net
