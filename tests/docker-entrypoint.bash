@@ -21,7 +21,6 @@ function test_generate_conf {
 		server=1.0.0.1
 	EOF
 
-exit
 	assert_stdin "$(NAMESERVER='1.0.0.1 1.1.1.1' generate_conf)" <<-EOF
 		no-hosts
 		addn-hosts=/etc/dnsmasq.d/hostcamo.hosts
