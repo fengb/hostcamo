@@ -12,15 +12,9 @@ ignore_hosts=(
 )
 
 # Ripped this list from Pi-Hole:
-# https://raw.githubusercontent.com/pi-hole/pi-hole/557372b3122c6ba27c63e6908ea34f3a64829fb8/adlists.default
+# https://github.com/pi-hole/pi-hole/blob/9fe687bd62a7adb9b7f5f56b58e2823ee58d8fbc/automated%20install/basic-install.sh#L1129
 hostfiles=(
   'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts'
-  'https://mirror1.malwaredomains.com/files/justdomains'
-  'http://sysctl.org/cameleon/hosts'
-  'https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist'
-  'https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt'
-  'https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt'
-  'https://hosts-file.net/ad_servers.txt'
 )
 
 function panic {
