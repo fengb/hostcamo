@@ -69,6 +69,7 @@ function process_all {
 }
 
 if [ "${BASH_SOURCE[0]}" = "$0" ]; then
+  trap 'pkill -P $$' exit
   init_opts "$@"
   process_all "${hostfiles[@]}" | sort -u | sed -e "/^$/d" -e "s/^/$target_ip /"
 fi
