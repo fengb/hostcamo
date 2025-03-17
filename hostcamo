@@ -17,6 +17,8 @@ hostfiles=(
   'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts'
 )
 
+trap 'pkill -P $$' exit
+
 function panic {
   echo "$@" >&2
   exit 1
