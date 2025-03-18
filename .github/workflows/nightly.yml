@@ -1,0 +1,27 @@
+name: Nightly
+
+on:
+  push:
+  schedule:
+    - cron: "0 8 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  history:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: 'make build'
+      - run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          make history MESSAGE="[CI:${GITHUB_EVENT_NAME}] ${GITHUB_SHA:0:8}"
+      - uses: ad-m/github-push-action@master
+        with:
+          branch: history
